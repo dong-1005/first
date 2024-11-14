@@ -12,7 +12,7 @@
 	<meta name="msapplication-navbutton-color" content="#58595B" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="#58595B" />
 	<!-- Meta tag end-->
-	<title>Trang Đăng Ký</title>
+	<title>Checkout</title>
 	<!-- Favicon start -->
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -21,7 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link rel="stylesheet" type="text/css" href="css/registration.css" />
+	<link rel="stylesheet" type="text/css" href="css/checkout.css" />
 	<!-- CSS and Bootstrap 4 link start end -->
 </head>
 
@@ -70,7 +70,7 @@
 			<div class="row no-gutters">
 				<div class="col-md-2 d-none d-md-block">
 					<a href="index.html">
-						<img src="img/logo.png" class="logo" title="Trang chủ" alt="img/logo.png" />
+						<img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
 					</a>
 				</div>
 				<div class="col-md-10">
@@ -172,8 +172,8 @@
 	<nav aria-label="breadcrumb">
 		<div class="container">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Đăng ký</li>
+				<li class="breadcrumb-item"><a href="cart.html">Cart</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Checkout</li>
 			</ol>
 		</div>
 	</nav>
@@ -226,7 +226,6 @@
 		</div>
 		<!-- Modal end -->
 		<div class="container">
-			<span id="sidenav" class="d-md-none" onclick="openNav()"></span>
 			<!-- Cart start -->
 			<div id="cart">
 				<div class="item-inCart">
@@ -271,7 +270,7 @@
 			<div id="dropdown-hover" class="d-none d-md-block">
 				<div class="row no-gutters">
 					<div class="col-md-8">
-						<h3>Sản Phẩm Phổ Biến</h3>
+						<h3>Most Popular Categories</h3>
 						<div class="row no-gutters">
 							<div class="col-md-6">
 								<h6>Brake Systems</h6>
@@ -333,7 +332,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 all-categories">
-						<h4>Danh Mục Sản Phẩm</h4>
+						<h4>All Categories</h4>
 						<ul>
 							<li><a>Air Conditioning or Heater</a></li>
 							<li><a>Bearings</a></li>
@@ -362,71 +361,217 @@
 				</div>
 			</div>
 			<!-- Dropdown end -->
-			<!-- Registration form start -->
-			<div id="registration">
-				<form action="">
-					<div class="row justify-content-center">
-						<div class="col-md-4 login">
-							<h4>Đăng ký tài khoản mới</h4>
-							<div class="form-group">
-								<label class="email"><b>Tên tài khoản hoặc địa chỉ Email</b> * </label>
-								<input type="email" class="form-control" required />
-							</div>
-							<div class="form-group">
-								<label><b>Mật khẩu</b> * </label>
-								<input type="password" class="form-control" placeholder="Mật khẩu phải có độ dài ít nhất 4 ký tự" required />
-								<div class="password-meter-bar"></div>
-							</div>
-							<div class="form-group">
-								<label><b>Nhập lại mật khẩu</b> * </label>
-								<input type="password" class="form-control" required />
-							</div>
-						</div>
-						<div class="col-md-4 offset-md-2 address">
-							<h4>Thông tin cá nhân</h4>
-							<div class="form-group">
-								<label><b>Tên</b> * </label>
-								<input type="text" class="form-control" required />
-							</div>
-							<div class="form-group">
-								<label><b>Họ</b> * </label>
-								<input type="text" class="form-control" required />
-							</div>
-							<div class="form-group">
-								<div class="col-lg-6 p-0">
-									<label><b>Giới tính</b> * </label>
-									<select class="custom-select arrow" name="reason" required>
-									<option selected value="">-</option>
-									<option value="1">Nam</option>
-									<option value="2">Nữ</option>
-									</select>
+			<!-- Checkout end -->
+			<div id="checkout">
+				<h4 class="text-uppercase text-center font-weight-bold mb-5">Checkout</h4>
+				<div class="row no-gutters">
+					<div class="col-md-6 col-lg-4 billing">
+						<h6 class="text-uppercase font-weight-bold">1. Billing</h6>
+						<div class="wrap pt-4 pr-3">
+							<div class="form-group row">
+								<div class="col-8">
+									<input type="email" class="form-control" placeholder="Email address" /><i class="far fa-envelope"></i>
 								</div>
 							</div>
-							<div class="form-group">
-								<label><b>Số điện thoại</b> * </label>
-								<input type="number" class="form-control" required />
+							<div class="form-group row mb-3 user">
+								<div class="col-6">
+									<input type="text" class="form-control" placeholder="First name" />
+									<i class="fas fa-user"></i>
+								</div>
+								<div class="col-6">
+									<input type="text" class="form-control" placeholder="Last name" />
+									<i class="fas fa-user"></i>
+								</div>
 							</div>
-							<div> 
-								<p>Thông tin cá nhân của bạn sẽ được sử dụng để tăng cường trải nghiệm sử dụng website, để quản lý truy cập vào tài khoản của bạn, và cho các mục đích cụ thể khác được mô tả trong <a href="about-us.html">chính sách riêng tư</a> của chúng tôi</p>
+							<div class="form-group row">
+								<div class="col-8">
+									<input type="number" class="form-control" placeholder="Mobile number" />
+									<i class="fas fa-phone"></i>
+								</div>
 							</div>
-							<div class="text-right">
-								<button id="btn-registration" class="btn btn-primary" type="submit">Đăng ký</button>
+							<div id="first-address">
+								<div class="form-group row mb-3 address">
+									<div class="col-8">
+										<input type="text" class="form-control" placeholder="Address" />
+										<i class="fas fa-home"></i>
+									</div>
+									<div class="col-4 unit">
+										<input type="text" class="form-control" placeholder="App/Unit" />
+									</div>
+								</div>
+								<div class="form-group row city">
+									<div class="col-8">
+										<input type="number" class="form-control" placeholder="City" />
+									</div>
+								</div>
+								<div class="form-group row mb-3 state">
+									<div class="col-8 col-md-6">
+										<select class="custom-select arrow" name="state" required>
+											<option selected value="">State</option>
+											<option value="1">England</option>
+											<option value="2">France</option>
+											<option value="3">Germany</option>
+											<option value="4">Italy</option>
+											<option value="5">Serbia</option>
+											<option value="6">USA</option>
+										</select>
+									</div>
+									<div class="col-4 col-md-6 zip">
+										<input type="text" class="form-control" placeholder="Zip code" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<label class="form-check-label">
+										<input class="form-check-iput" type="checkbox" value="" id="defaultCheck1" />
+										<span class="checkbox-span"></span>
+										Make me an account for faster checkout. (Optional)
+									</label>
+								</div>
+								<div class="col-lg-12 shipping-check">
+									<label class="form-check-label">
+										<input id="shipping-check" data-toggle="collapse" href="#new-address" role="button" aria-expanded="false" aria-controls="new-address" class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+										<span class="checkbox-span"></span>
+										Ship to a different address
+									</label>
+								</div>
+							</div>
+							<div id="new-address" class="collapse">
+								<div class="form-group row address">
+									<div class="col-8">
+										<input type="text" class="form-control" placeholder="Address" />
+										<i class="fas fa-home"></i>
+									</div>
+									<div class="col-4 unit">
+										<input type="text" class="form-control" placeholder="App/Unit" />
+									</div>
+								</div>
+								<div class="form-group row city">
+									<div class="col-8">
+										<input type="number" class="form-control" placeholder="City" />
+									</div>
+								</div>
+								<div class="form-group row state mb-0">
+									<div class="col-8 col-md-6">
+										<select class="custom-select arrow" name="state" required>
+											<option selected value="">State</option>
+											<option value="1">England</option>
+											<option value="2">France</option>
+											<option value="3">Germany</option>
+											<option value="4">Italy</option>
+											<option value="5">Serbia</option>
+											<option value="6">USA</option>
+										</select>
+									</div>
+									<div class="col-4 col-md-6 zip">
+										<input type="text" class="form-control" placeholder="Zip code" />
+									</div>
+								</div>
 							</div>
 						</div>
-						<!--
-						<div class="col-md-6 offset-lg-0 col-lg-4 shipping ">
-							<h4>Shipping address</h4>
-							<label class="form-check-label">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required />
-								<span class="checkbox-span"></span>
-								Shipping address is the same as billing address
-							</label>
-						</div>
--->
 					</div>
-				</form>
+					<div class="col-md-6 col-lg-4 payment">
+						<h6 class="text-uppercase font-weight-bold px-4">2. Payment</h6>
+						<div class="wrap pt-4 px-4 second">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required />
+								<span class="checkmark"></span>
+								<label class="form-check-label ml-4 font-weight-bold" for="inlineRadio1">PayPal</label>
+								<img src="img/icon/paypal.png" alt="img/icon/paypal.png" class="icon" />
+							</div>
+							<p class="pt-4 pb-5 pl-1"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside">What is PayPal?</a></p>
+							<div class="payment">
+								<i class="fas fa-lock"></i>
+								<p class="font-weight-bold">Secure credit card payment</p>
+								<p class="small">This is a secure TLS 1.2 SSL encrypted payment.</p>
+							</div>
+							<div class="form-check credit-card mt-4">
+								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1" required />
+								<span class="checkmark"></span>
+								<label class="form-check-label ml-4 font-weight-bold" for="inlineRadio2">Credit<br />Card</label>
+								<div class="payment-card">
+									<img src="img/pay/visa-2.png" title="Visa" alt="img/pay/visa-2.png" />
+									<img src="img/pay/master-card-2.png" title="MasterCard" alt="img/pay/master-card-2.png" />
+									<img src="img/pay/maestro-2.png" title="Maestro" alt="img/pay/maestro-2.png" />
+									<img src="img/pay/american-express-2.png" title="American Express" alt="img/pay/american-express-2.png" />
+								</div>
+							</div>
+							<div class="form-group row py-3">
+								<div class="col-8">
+									<input type="number" class="form-control card" placeholder="Card number" />
+									<i class="far fa-credit-card"></i>
+								</div>
+							</div>
+							<div class="form-group row no-gutters card-number">
+								<div class="col-4 col-lg-4 pr-1">
+									<select class="custom-select arrow" name="state" required>
+										<option selected value="">Month</option>
+										<option value="1">Jan</option>
+										<option value="2">Feb</option>
+										<option value="3">Mar</option>
+										<option value="4">Apr</option>
+										<option value="5">May</option>
+										<option value="6">Jun</option>
+										<option value="7">Jul</option>
+										<option value="8">Aug</option>
+										<option value="9">Sep</option>
+										<option value="10">Oct</option>
+										<option value="11">Nov</option>
+										<option value="12">Dec</option>
+									</select>
+								</div>
+								<div class="col-4 col-lg-4 pr-1">
+									<select class="custom-select arrow" name="state" required>
+										<option selected value="">Year</option>
+										<option value="1">2018</option>
+										<option value="2">2019</option>
+										<option value="3">2020</option>
+										<option value="4">2021</option>
+										<option value="5">2022</option>
+										<option value="6">2023</option>
+										<option value="7">2024</option>
+										<option value="8">2025</option>
+									</select>
+								</div>
+								<div class="col-4 col-lg-4 cvv">
+									<input type="number" class="form-control" placeholder="cvv/cvc" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 mt-md-5 offset-md-6 col-lg-4 offset-lg-0 mt-lg-0 confirmation">
+						<h6 class="text-uppercase font-weight-bold px-4">3. Confirmation</h6>
+						<div class="wrap pl-4 pt-4">
+							<div class="promo-code">
+								<h6 class="text-uppercase font-weight-bold">Enter your promo and speed perks code here</h6>
+								<a class="btn-collapse" data-toggle="collapse" href="#promo-code" role="button" aria-expanded="true" aria-controls="promo-code" title="Collapse"></a>
+								<div id="promo-code" class="collapse show">
+									<div class="input-group enter-code">
+										<input type="text" class="code" placeholder="Enter promo code" />
+										<button id="btn-apply" class="btn btn-primary" disabled>Apply</button>
+									</div>
+								</div>
+							</div>
+							<div id="order-summary">
+								<h5 class="text-uppercase text-center font-weight-bold m-0">Order summary</h5>
+								<div id="subtotal" class="text-uppercase">
+									<p class="font-weight-bold">Subtotal<span class="text-danger font-weight-bold float-right">$63.99</span></p>
+									<p>Estimated shipping<span class="font-weight-bold text-capitalize float-right">Free</span></p>
+									<p>Estimated tax<span class="font-weight-bold float-right">$0.00</span></p>
+									<div id="total" class="font-weight-bold">
+										<p>Order total<span class="float-right">$63.99</span></p>
+									</div>
+								</div>
+							</div>
+							<div id="order-now" class="text-uppercase">
+								<button id="btn-order-now" class="btn btn-primary text-uppercase font-weight-bold">Place order now</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<!-- Registration form end -->
+			<!-- Checkout end -->
 		</div>
 	</div>
 	<!-- Content end -->
@@ -530,6 +675,7 @@
 	<script src="js/wow.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/fontawesome-all.min.js"></script>
+	<script src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
 	<script src="js/main.js"></script>
 	<!-- JavaScript links end -->
 </body>

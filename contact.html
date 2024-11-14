@@ -12,17 +12,17 @@
 	<meta name="msapplication-navbutton-color" content="#58595B" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="#58595B" />
 	<!-- Meta tag end-->
-	<title>Trang Đăng Ký</title>
+	<title>Contact</title>
 	<!-- Favicon start -->
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<!-- Favicon end -->
-	<!-- CSS and Bootstrap 4 link start -->
+	<!-- CSS and Bootstrap 4 links start -->
 	<link rel="stylesheet" type="text/css" href="css/plugins-css.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link rel="stylesheet" type="text/css" href="css/registration.css" />
-	<!-- CSS and Bootstrap 4 link start end -->
+	<link rel="stylesheet" type="text/css" href="css/contact.css" />
+	<!-- CSS and Bootstrap 4 links end -->
 </head>
 
 <body>
@@ -70,7 +70,7 @@
 			<div class="row no-gutters">
 				<div class="col-md-2 d-none d-md-block">
 					<a href="index.html">
-						<img src="img/logo.png" class="logo" title="Trang chủ" alt="img/logo.png" />
+						<img src="img/logo.png" class="logo" title="Home" alt="img/logo.png" />
 					</a>
 				</div>
 				<div class="col-md-10">
@@ -132,14 +132,14 @@
 										<a class="nav-link" href="index.html">Trang chủ</a>
 									</li>
 									<li id="product-dropdown" class="nav-item">
-										<a class="nav-link" href="product.html">Sản Phẩm <i class="fas fa-caret-down"></i>
+										<a class="nav-link" href="product.html">Sản phẩm <i class="fas fa-caret-down"></i>
 											</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="about-us.html">Giới thiệu</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="contact.html">Liên hệ</a>
+										<a class="nav-link active" href="javascript:void(0)">Liên hệ</a>
 									</li>
 								</ul>
 							</nav>
@@ -173,7 +173,7 @@
 		<div class="container">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Đăng ký</li>
+				<li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
 			</ol>
 		</div>
 	</nav>
@@ -226,7 +226,6 @@
 		</div>
 		<!-- Modal end -->
 		<div class="container">
-			<span id="sidenav" class="d-md-none" onclick="openNav()"></span>
 			<!-- Cart start -->
 			<div id="cart">
 				<div class="item-inCart">
@@ -271,7 +270,7 @@
 			<div id="dropdown-hover" class="d-none d-md-block">
 				<div class="row no-gutters">
 					<div class="col-md-8">
-						<h3>Sản Phẩm Phổ Biến</h3>
+						<h3>Most Popular Categories</h3>
 						<div class="row no-gutters">
 							<div class="col-md-6">
 								<h6>Brake Systems</h6>
@@ -333,7 +332,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 all-categories">
-						<h4>Danh Mục Sản Phẩm</h4>
+						<h4>All Categories</h4>
 						<ul>
 							<li><a>Air Conditioning or Heater</a></li>
 							<li><a>Bearings</a></li>
@@ -362,71 +361,98 @@
 				</div>
 			</div>
 			<!-- Dropdown end -->
-			<!-- Registration form start -->
-			<div id="registration">
-				<form action="">
-					<div class="row justify-content-center">
-						<div class="col-md-4 login">
-							<h4>Đăng ký tài khoản mới</h4>
-							<div class="form-group">
-								<label class="email"><b>Tên tài khoản hoặc địa chỉ Email</b> * </label>
-								<input type="email" class="form-control" required />
+			<!-- Contact start -->
+			<div id="contact">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2 class="wow slideInLeft"><img src="img/icon/company.png" class="icon-2 wow slideInLeft" alt="img/icon/company.png" /> Trụ sở công ty</h2>
+						<div class="row">
+							<div class="col-sm-6">
+								<h5 class="mb-1"><img src="img/icon/name.png" class="icon" alt="img/icon/name.png" /> Tên công ty</h5>
+								<p class="text-company">Công Ty TNHH Đầu Tư Và Phát Triển Thương Mại TRUST </p>
+								<h5 class="mt-5 mb-2"><img src="img/icon/address.png" class="icon" alt="img/icon/address.png" /> Địa chỉ</h5>
+								<p class="text-company">Số 143 Đường Hai Bà Trưng, Phường Tân Đông Hiệp, Thành Phố Dĩ An, Tỉnh Bình Dương. </p>
+								<h5 class="mt-5 mb-1"><img src="img/icon/tel.png" class="icon" alt="img/icon/tel.png" /> Điện thoại</h5>
+								<p class="text-company">0949772176</p>
+								<h5 class="mt-5 mb-1"><img src="img/icon/fax.png" class="icon" alt="img/icon/fax.png" /> Mã số thuế</h5>
+								<p class="text-company">0316885478</p>
 							</div>
-							<div class="form-group">
-								<label><b>Mật khẩu</b> * </label>
-								<input type="password" class="form-control" placeholder="Mật khẩu phải có độ dài ít nhất 4 ký tự" required />
-								<div class="password-meter-bar"></div>
-							</div>
-							<div class="form-group">
-								<label><b>Nhập lại mật khẩu</b> * </label>
-								<input type="password" class="form-control" required />
+							<div class="col-sm-6 mb-3 mb-sm-5">
+								<h5 class="mb-1"><img src="img/icon/email.png" class="icon" alt="img/icon/email.png" /> Email</h5>
+								<p class="text-company">autotrust@email.com</p>
+								<h5 class="mt-5 mb-2"><img src="img/icon/watch.png" class="icon" alt="img/icon/watch.png" />Giờ làm việc</h5>
+								<p class="text-company">Thứ 2 - Thứ 6<br /><span class="font-weight-bold">08h:00 - 19h:00</span></p>
+								<p class="text-company">Thứ 7<br /><span class="font-weight-bold">08h:00 - 14h:00</span></p>
+								<p class="text-company"><span class="text-uppercase font-weight-bold">Đóng cửa</span> vào chủ nhật.</p>
 							</div>
 						</div>
-						<div class="col-md-4 offset-md-2 address">
-							<h4>Thông tin cá nhân</h4>
-							<div class="form-group">
-								<label><b>Tên</b> * </label>
-								<input type="text" class="form-control" required />
-							</div>
-							<div class="form-group">
-								<label><b>Họ</b> * </label>
-								<input type="text" class="form-control" required />
-							</div>
-							<div class="form-group">
-								<div class="col-lg-6 p-0">
-									<label><b>Giới tính</b> * </label>
-									<select class="custom-select arrow" name="reason" required>
-									<option selected value="">-</option>
-									<option value="1">Nam</option>
-									<option value="2">Nữ</option>
-									</select>
+					</div>
+					<div class="col-lg-6">
+						<h2 class="wow slideInLeft"><img src="img/icon/pin.png" class="icon-2" alt="img/icon/pin.png" /> Bản đồ Google Maps</h2>
+						<div id="map">
+							<iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3917.743472398265!2d106.778607!3d10.90709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8fadc5652d9%3A0xfb6cade107745162!2zMTQzIEhhaSBCw6AgVHLGsG5nLCBUw6JuIMSQw7RuZyBIaeG7h3AsIETEqSBBbiwgQsOsbmggRMawxqFuZw!5e0!3m2!1sen!2s!4v1731564080212!5m2!1sen!2s" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<!-- Contact form start -->
+				<div class="contact-form">
+					<h2 class="wow slideInLeft"><img src="img/icon/form.png" class="icon-2" alt="img/icon/form.png" /> Contact form</h2>
+					<form action="">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="row">
+									<div class="col-sm-6 col-lg-6">
+										<div class="form-group">
+											<label title="Required">Name</label>
+											<input type="text" name="name" class="form-control mb-4" required />
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<div class="form-group">
+											<label title="Required">Điện thoại</label>
+											<input type="number" name="tel" class="form-control mb-4" required />
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<div class="form-group">
+											<label title="Required">Email</label>
+											<input type="email" name="email" class="form-control mb-4" required />
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<div class="form-group">
+											<label title="Required">Company name</label>
+											<input type="text" name="company" class="form-control mb-4" required />
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-6">
+										<div class="form-group">
+											<label>Reason for reporting</label>
+											<select class="custom-select arrow" name="reason" required>
+												<option selected value="">-</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="form-group">
-								<label><b>Số điện thoại</b> * </label>
-								<input type="number" class="form-control" required />
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="exampleTextarea">Message</label>
+									<textarea name="mssg" class="form-control" id="exampleTextarea" rows="5" placeholder="Enter your message..." required></textarea>
+								</div>
 							</div>
-							<div> 
-								<p>Thông tin cá nhân của bạn sẽ được sử dụng để tăng cường trải nghiệm sử dụng website, để quản lý truy cập vào tài khoản của bạn, và cho các mục đích cụ thể khác được mô tả trong <a href="about-us.html">chính sách riêng tư</a> của chúng tôi</p>
-							</div>
-							<div class="text-right">
-								<button id="btn-registration" class="btn btn-primary" type="submit">Đăng ký</button>
+							<div class="col text-right">
+								<button id="btn-submit" type="submit" class="btn btn-primary font-weight-bold">Submit</button>
 							</div>
 						</div>
-						<!--
-						<div class="col-md-6 offset-lg-0 col-lg-4 shipping ">
-							<h4>Shipping address</h4>
-							<label class="form-check-label">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required />
-								<span class="checkbox-span"></span>
-								Shipping address is the same as billing address
-							</label>
-						</div>
--->
-					</div>
-				</form>
+					</form>
+				</div>
+				<!-- Contact form end -->
 			</div>
-			<!-- Registration form end -->
+			<!-- Contact end -->
 		</div>
 	</div>
 	<!-- Content end -->
@@ -524,7 +550,9 @@
 	</footer>
 	<!-- Footer end -->
 	<a href="javascript:void(0)" id="back-to-top" title="Back to top"></a>
+	<!-- JavaScript links start -->
 	<script src="jq/jquery-3.3.1.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgZv4d0llq6H3LTupaCXL-Vec5a-q7I28&callback=initMap"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
 	<script src="js/wow.js"></script>
