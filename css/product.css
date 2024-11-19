@@ -126,7 +126,11 @@ a {
 }
 
 #filters #expand1,
-#filters #expand2 {
+#filters #expand2
+#filters #expand3
+#filters #expand4
+#filters #expand5
+#filters #expand6 {
 	padding-left: 25px;
 }
 
